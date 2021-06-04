@@ -1,7 +1,17 @@
 // src/pages/index.tsx
+import React from 'react';
+import { useRouter } from 'next/router';
+import SubmitForm from 'components/submit-form';
+import LinkedinLogin from 'components/linkedin-login';
+
+
 
 const IndexPage: React.FC = () => {
-  return <h1 className="text-purple-600">Hello, Next!</h1>
+  const router = useRouter()
+
+  return(
+    <LinkedinLogin />
+  );
 }
 
 export default IndexPage
