@@ -66,13 +66,13 @@ const LinkedinLogin: React.FC = () => {
     const redirect = `document.location.href=${oauthUrl}`
     return(
         <div>
-        <header >
-          <h1>React Linkedin Login</h1>
-          <p>A demo page for Linkedin login</p>
+        <header>
+          <h1 className="flex justify-center">React Linkedin Login</h1>
+          <p className="flex justify-center">A demo page for Linkedin login</p>
           <Alert />
         </header>
         <div>
-          <a href={oauthUrl}>Linkedin Login</a>
+          <a className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"href={oauthUrl}>Linkedin Login</a>
           {isAuthorized &&
             (
               <ProfileCard
